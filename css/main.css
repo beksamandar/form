@@ -1,0 +1,922 @@
+/* 
+font-family: 'PT Sans', sans-serif;
+font-family: 'PT Sans Caption', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+.big_container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.section_title{
+    font-weight: bold;
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+/* Header */
+
+header{
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+.header_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_block .header_navigation ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 50px;
+}
+
+.header_block .header_navigation ul a{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+.header_block .header_action{
+    display: flex;
+    gap: 7px;
+}
+
+.header_block .header_action a{
+    background-color: #ffd92c;
+    padding: 13px 20px;
+    margin: 20px 0;
+    border-radius: 21px;
+    line-height: 1;
+    display: flex;
+}
+
+.header_block .header_action a.menu_search{
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    align-items: center;
+}
+
+.header_block .header_action a.menu_search img{
+    margin-left: 19px;
+}
+
+/* form_selection */
+
+.filtr_form{
+    font-family: 'PT Sans', sans-serif;;
+    background-image: url(../images/filter_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:20px 0;
+    margin-bottom: 35px;
+}
+
+.table{
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+    border: 1px solid #ece9e9;
+}
+
+.table .table_selection{
+    text-align: center;
+    padding:23px 0 19px 0;
+    width: 100%;
+    position: relative;
+    font-size: 15px;
+    border: 1px solid rgba(0,0,0,.10);
+}
+
+.table .table_btn{
+    background-color: #199bc5;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding: 23px 0 19px 0;
+    width: 100%;
+    color: #fff;
+    border: 1px solid #ece9e9;
+}
+
+
+/* Number */
+
+.block_number{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.block_number .number_item{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex: 0 0 auto;
+    width: 20%;
+}
+
+.block_number .number_item:last-child{
+    margin-right: 55px;
+}
+
+.number_item .big_number{
+    font-size: 34px;
+    font-weight: bold;
+    color: #199bc5;
+}
+
+.block_number .text{
+    color: #666666;
+    align-items: center;
+}
+
+/* ONLINE  INSURANCE */
+
+
+.insurance_block{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 90px;
+}
+
+
+.insurance_block .incurance_item{
+    padding: 24px 20px 20px 27px;
+    background-color: #089c9d;
+    flex: 0 0 auto;
+    width: calc(33.3333% - 20px);
+    border-radius: 8px;
+    box-shadow: 0px 21px 24px 0px rgb( 69, 68, 68, 0.06);
+    border: 1px solid rgba(0,0,0,0.07);
+    position: relative;
+    overflow: hidden;
+}
+
+.insurance_block .incurance_item:hover{
+    box-shadow: 0px 2px 32px 0px rgba(69 68 68 / 70%);
+}
+
+.insurance_block .insurance_text:hover{
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+.insurance_block .incurance_item .incurance_item::before{
+    content: '';
+    display: block;
+    height: 185px;
+    width: 185px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: -65px;
+    top: -46px;
+    opacity: .10;;
+}
+
+.insurance_block .incurance_item::after{
+    content: '';
+    display: block;
+    height: 185px;
+    width: 185px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: -65px;
+    top: -46px;
+    opacity: .10;;
+}
+
+.insurance_block .incurance_item.half{
+    width: calc(50% - 20px);  
+}
+
+.insurance_block .incurance_item .insurance_text{
+    border-bottom: 1px solid rgba(255,255,255,.11);
+    padding-bottom: 17px;
+    margin-bottom: 17px; 
+}
+
+.insurance_block .incurance_item .insurance_text img{
+    position: absolute;
+    right: -30px;
+    top: 0;
+}
+
+.insurance_block .incurance_item .insurance_text .insurance_name{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.insurance_block .incurance_item .insurance_text .insurance_description{
+    font-size: 15px;
+    color: #fff;
+    max-width: 220px;
+}
+
+.insurance_block .incurance_item .insurance_action{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.incurance_item .insurance_action .insurance_number{
+    display: flex;
+    font-family: 'PT Sans Caption', sans-serif;
+    color: #fff;
+    align-items: center;
+    gap: 6px;
+}
+
+.incurance_item .insurance_action .insurance_number span:first-child{
+    font-size: 29px;
+    font-weight: 700;
+}
+
+.incurance_item .insurance_action .insurance_number span:last-child{
+    font-size: 11px;
+    max-width: 60px;
+}
+
+.incurance_item .insurance_action .incurance_btn a{
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    padding: 14px 25px;
+    background-color: #ffd92c;
+    border-radius: 20px;
+    display: block;
+    line-height: 10px;
+}
+
+.incurance_item .insurance_action .incurance_btn a:hover{
+    box-shadow: 1px 0px 51px 3px rgb(255,217,44,10);
+}
+
+
+/* Online Compare */
+
+.online_compare .section_title{
+    width: 680px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+}
+
+.online_compare .big_container{
+    max-width: 830px;
+    margin: 0 auto;
+    border: 17px solid rgb(247,246,246);
+    background-color: #fafafa;
+}
+
+.online_compare{
+    margin-bottom: 55px;
+}
+
+.online_compare .compare_title{
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.online_compare .compare_logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.online_compare .compare_logo img{
+    object-fit: contain;
+}
+
+.online_compare .compare_block{
+    padding: 55px 55px  70px 85px;
+}
+
+/* Online company */
+
+.companies{
+    margin-bottom: 80px;
+}
+
+.companies_row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.companies .companies_block{
+    border-top: 1px solid #f2f2f3;
+    border-bottom: 1px solid #f2f2f3;
+}
+
+.companies_row .company_item{
+    padding: 52px 40px;
+    border-right: 1px solid #f2f2f3;
+}
+.companies_row .company_item:last-child{
+    border-right: none;
+}
+
+.companies_row .company_item img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Call Action */
+
+.max_container{
+    max-width: 1299px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.call_to_action{
+    margin-bottom: 103px;
+}
+
+.call_to_action .action_block{
+    background-color: #fafafa;
+    padding-bottom: 70px;
+}
+
+.call_to_action .action_logo{
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 55px;
+}
+
+.call_to_action .action_title{
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.call_to_action .action_description{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    line-height: 25px;
+    padding: 0 65px;
+    color: #666666;
+}
+
+
+
+.action_block .action_btn a.action_button img{
+    margin-left: 24px;
+}
+
+
+.action_block .action_btn a.action_button{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 17px;
+    align-items: center;
+}
+
+.action_block .action_btn a{
+    background-color: #fbd93f;
+    display: flex;
+    max-width: 314px;
+    margin: auto;
+    max-height: 55px;
+    padding: 10px 17px 12px 24px;
+    position: absolute;
+    right: 0;
+    bottom: -25px;
+    left: 0;
+}
+
+/* Benefits Block */
+
+.benefits{
+    margin-bottom: 70px;
+}
+
+.benefits .benifits_block{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+}
+
+.benifits_block .benefits_item{
+    display: flex;
+    width: calc(50% - 45px);
+}
+
+.benefits_item .benefits_title{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.benefits_item .benifits_description{
+    font-size: 15px;
+    color: #666666;
+    line-height: 28px;
+}
+
+.insurance_benifits_description{
+    font-size: 15px;
+    padding-bottom: 20px;
+    padding-right: 77px;
+    color: #fff;
+}
+
+.benefits_item .benefits_image{
+    margin-right: 20px;
+    width: 100px;
+}
+
+/* About Insurance */
+
+.about_insurance{
+    background-color: #fafafa;
+}
+
+.about .about_title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    padding-top: 65px;
+}
+
+.about .about_block p{
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+
+.about .about_description{
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+
+.about_footer{
+    display: flex;
+    word-spacing: 10px;
+    padding: 30px;
+}
+.about_footer .footer{
+    padding-left: 10px;
+}
+
+.about_footer .footer a{
+    text-decoration: none;
+    color: #666666;
+}
+
+/* Social Networks */
+
+.social_networks{
+    background-color: #333;
+    padding: 15px 0;
+}
+
+.social_networks .networs_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social_networks .social_links{
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.social_networks .social_links a{
+    font-size: 20px;
+    color: #737272;
+    transition: 1s all ease;
+}
+
+.social_networks .social_links a:hover{
+    color: #ffd92c;
+}
+
+/* Poducts */
+
+.products{
+    padding-bottom: 55px;
+    background-color: #f6f6f6;
+}
+.products .products_block{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 auto;
+    justify-content: space-between;
+}
+
+.products .product_title{
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    padding-top: 55px;
+}
+.products_block ul{
+    list-style: none;
+    margin-bottom: 25px;
+}
+.products_block .products_title{
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 30px;
+    max-width: 263px;
+}
+.products_block li a{
+    font-family: 'PT Sans Caption', sans-serif;
+    color: #666666;
+    line-height: 37px;
+    text-decoration: none;
+}
+/* Footer */
+
+.footer_block{
+    padding-top: 40px;
+    display: flex;
+    margin-bottom: 20px;
+    gap: 110px;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+.footer_block .footer_left{
+    flex: 0 0 auto;
+    width: 790px;
+}
+.footer_block .footer_top ul{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    list-style: none;
+    color: #666666;
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.footer_block .footer_top ul a{
+    text-decoration: none;
+    color: #666666;
+}
+.footer_block .footer_bottom ul{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    list-style: none;
+    color: #666666;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.footer_block .footer_bottom ul a{
+    text-decoration: none;
+    color: #666666;
+}
+
+.footer_others .info_top{
+    max-width: 645px;
+    font-size: 13px;
+    color: #999999;
+    margin-bottom: 25px;
+}
+.footer_others .info_bottom{
+    color: #666666;
+    max-width: 700px;
+    flex: 0 0 auto;
+    font-size: 14px;
+}
+
+.footer_others .info_bottom a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666666;
+    border-bottom: 2px solid #dddddd;
+}
+
+.footer_right{
+    position: relative;
+}
+
+.adress .headphoneposit{
+    position: absolute;
+    top: 1px;
+    left: -37px;
+}
+.footer_right .adress .servise{
+    color: #666666;
+    margin-bottom: 13px;
+}
+.footer_right .adress .phone{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.adress .info{
+    color: #000000;
+    margin-bottom: 35px;
+}
+
+.show_all{
+    display: none;
+}
+.adress .contact{
+    color: #666666;
+    margin-bottom: 12px;
+}
+
+.adress .footer_social_networks ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Tab */
+@media (max-width: 1190px){
+    .container{
+        max-width: 724px;
+        padding: 0 20px;
+    }
+    .insurance_block{
+        gap: 20px;
+        margin-bottom: 32px;
+    }
+    .header_block .header_navigation ul li:nth-child(n+4){
+        display: none;
+    }
+    .section_title{
+        margin-bottom: 30px;
+    }
+    .insurance_block .incurance_item,
+    .insurance_block .incurance_item.half{
+        width: calc(50% - 10px);
+    }
+    .insurance_block .incurance_item:nth-child(3n){
+        width: 100%;
+    }
+    .insurance_block .incurance_item:nth-child(n+6){
+        display: none;
+    }
+
+    .show_all{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 82px;
+    }
+    .show_all a{
+        display: inline-block;
+        padding: 20px 60px;
+        background-color: #33cc66;
+        font-family: 'PT Sans Caption', sans-serif;
+        font-size: 15px;
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+        border-radius: 4px;  
+    }
+    .companies_row .company_item:nth-child(n+4){
+        display: none;
+    }
+    .online_compare .compare_block{
+        padding: 55px 22px 70px 35px;
+    }
+
+    .benefits .benifits_block{
+        display: block;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .benifits_block .benefits_item{
+        width: 100%;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    .benifits_block .benefits_item img{
+        width: 50px;
+    }
+    .products .products_item:nth-child(n+3){
+        display: none;
+    }
+
+    .footer_block .footer_left{
+        max-width: 100%;
+    }
+    .footer_others .info_top{
+        width: 50%;
+    }
+    .footer_block{
+        display: block;
+    }
+    .footer_block .footer_top ul{
+        gap: 20px 35px;
+        width: 60%;
+    }
+    .footer_right .adress{
+        position: absolute;
+        top: -265px;
+        left: 482px;
+    }
+    .products .products_block{
+        gap: 35px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 764px){
+    .container{
+        max-width: 320px;
+        padding: 0 16px;
+    }
+    .header_block .header_navigation ul{
+        display: none;
+    }
+    .header_block .header_action a{
+        padding: 13px 15px;
+    }
+    .header_block .header_action a.menu_search span{
+        display: none;
+    }
+    .header_block .header_action a.menu_search img{
+        margin-left: 0;
+    }
+    .section_title{
+        font-size: 26px;
+        max-width: 260px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .table .table_selection{
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        border: 1px solid rgba(0,0,0,.10);
+    }
+    
+    .table{
+        display: block;
+        border: none;
+    }
+    .table .table_btn{
+        border-radius: 5px;
+        border: none;
+    }
+    .insurance_block{
+        gap: 0;
+        margin: 0 -16px;
+        margin-bottom: 10px;
+    }
+    .insurance_block .incurance_item,
+    .insurance_block .incurance_item.half{
+        width: 100%;
+        padding: 20px 15px;
+        border-radius: 0;
+        box-shadow: 0;
+    }
+    .insurance_block .incurance_item .insurance_text .insurance_name{
+        position: relative;
+        z-index: 100;
+    }
+    .companies_row .company_item:nth-child(n+2){
+        display: none;
+    }
+    .companies_row .company_item{
+        border-right: none;
+        padding: 24px;
+    }
+    .social_networks{
+        position: relative;
+    }
+    .social_networks .social_links{
+        position: absolute;
+        right: 0;
+        top: 30px;
+        gap: 15px;
+        right: 15px;
+    }
+    .benefits .benifits_block{
+        display: block;
+        width: 100%;
+    }
+    .benifits_block .benefits_item:nth-child(n+2){
+        display: none;
+    }
+    .benifits_block .benefits_item{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    
+    .online_compare .compare_title{
+        max-width: 100%;
+        font-size: 20px;
+    }
+    .online_compare .compare_block{
+        padding: 0;
+    }
+    .online_compare .compare_logo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .block_number{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .block_number .number_item{
+        width: 50%;
+    }
+    .block_number .number_item:last-child{
+        margin: 0;
+    }
+    .number_item .big_number{
+        width: 48px;
+        flex: 0 0 auto;
+    }
+    .action_block .action_btn a{
+        max-width: 229px;
+        position: absolute;
+        right: 0;
+        bottom: -25px;
+        left: 0;
+    }
+    .call_to_action .action_description .action_paragraph{
+        display: none;
+    }
+    .call_to_action .action_description{
+        padding: 0 15px 0 20px;
+    }
+    .about .about_title{
+        font-size: 22px;
+    }
+
+    .about_bottom{
+        display: none;
+    }
+    .products .products_item:nth-child(n+2){
+        display: none;
+    }
+    .footer_block .footer_top ul{
+        gap: 20px 20px;
+        display: flex;
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .footer_others .info_top {
+        width: 100%;
+    }
+    .footer_bottom{
+        margin-bottom: 252px;
+    }
+    .footer_right .adress{
+        position: absolute;
+        top: -416px;
+        left: 37px;
+    }
+}
