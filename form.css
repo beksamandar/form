@@ -1,0 +1,121 @@
+/* form */
+body{
+	font-family:Tahoma;
+	font-size: 20px;
+	background-color:  #a0ad98;
+	background-image: url(images/form.png);
+	background-repeat: no-repeat, repeat;
+    background-size: 300px 300px;
+	background-attachment: fixed;
+	background-position: 10px 30px;
+}
+
+.containar{
+	width: 683px;
+	border: 1px solid #ccc;
+	margin: 0 auto;
+	padding: 40px 20px;
+	background-color: #ccc
+	
+}
+
+form{
+	width: 600px;
+	border: 5px solid #333;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+form input{
+	width: 100%;
+	height: 40px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	padding: 0 15px;
+    font-weight: 700;
+}
+form .email{
+    background-image: url(images/email.png);
+    background-repeat: no-repeat;
+    background-position: 14px center;
+    padding-left: 53px;
+}
+
+form .phone{
+    background-image: url(images/phone.png);
+    background-repeat: no-repeat;
+    background-position: 14px center;
+    padding-left: 53px;
+}
+
+form .fname{
+    background-image: url(images/employe-card.png);
+    background-repeat: no-repeat;
+    background-position: 14px center;
+    padding-left: 53px;
+}
+form .local{
+    background-image: url(images/location.png);
+    background-repeat: no-repeat;
+    background-position: 14px center;
+    padding-left: 53px;
+    font-weight: 700;
+}
+
+form p{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+}
+form .doc{
+    margin-bottom: 20px;
+}
+
+form fieldset{
+	border: 2px solid green;
+	padding: 30px;
+	margin-bottom: 20px;
+}
+form fieldset legend{
+	background-color: purple;
+	color: #fff;
+	padding: 0 15px;
+}
+
+form button{
+	 width: 100%;
+     background-image: url(images/send.png);
+     background-repeat: no-repeat;
+     background-position: 195px center;
+	 height: 50px;
+	 font-size: 24px;
+	 text-transform: uppercase;
+	 background-color: green;
+	 color: #fff;
+     margin-bottom: 20px;
+     
+}
+
+form .reset{
+    width: 100%;
+    background-image: url(images/reset.png);
+    background-repeat: no-repeat;
+    background-position: 220px center;
+	height: 50px;
+	font-size: 24px;
+	text-transform: uppercase;
+	background-color: green;
+    color: #fff;
+}
+
+@media (max-width: 768px){ /*smartphone*/
+
+ .container{
+        max-width: 100%;
+        padding: 0 15px;
+}
+form{
+	width: 72%;
+}
+}

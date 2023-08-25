@@ -1,0 +1,69 @@
+<!doctype.html>
+<html lang="en">
+	<head>
+		<title>Form</title>
+		<meta charset="utf-8">
+		<link href="form.css" rel="stylesheet">
+	</head>
+	<body>
+	
+		<div class="containar">
+		<form method="get">
+		
+			<fieldset>
+					<legend>Asosiy Ma'lumot</legend>
+					<p>
+						Familyangiz Ismingiz Otangizning ismi:<input name="fname" type="fname" class="fname"></input>
+					</p>
+					
+					<p>
+						Telefon Raqamingiz:<input name="tel" type="tel" class="phone" value="+998"></input>
+					</p>
+					
+					<p>
+						Email:<input name="email" type="email" class="email"></input>
+					</p>
+					
+					<p>
+						Yashash joyingiz:<input name="location" type="location"  value="Uzbekistan" class="local"></input>
+					</p>
+				
+			</fieldset>
+					
+				<fieldset>
+
+					<legend>Qo'shimcha Malumotlar</legend>
+				
+					<p>Qaysi viloytadansiz? <input list="regions" type="search" name="Region">
+					
+						<datalist id="regions">
+							<option>Toshkent </option>
+							<option>Andijon</option>
+							<option>Namangan</option>
+							<option>Farg'ona</option>
+							<option>Jizzax</option>
+							<option>Sirdaryo</option>
+							<option>Samarqand</option>
+							<option>Buxoro</option>
+							<option">Navoi</option>
+							<option>Qashqadaryo</option>
+							<option>Surxondaryo</option>
+							<option>Qoraqalpoq Respublikasi</option>
+						</datalist>
+					</p>
+						
+					<p>Kelish vaqti va sanani tanlang <input name="sanasi-vaqti" type="datetime-local"></p>
+
+					<p class="doc">Xujjatlarni joylashtirish (.JPG .JPEG .PNG .PDF )</p>
+					<input type="file"  id="avatar" accept="image/png, image/jpeg,">
+				</fieldset>
+
+				
+				<p>
+					<input type="reset" value="reset" class="reset">
+					<button>Yuborish</button>
+				</p>
+		</form>
+		</div>
+	</body>
+</html>
